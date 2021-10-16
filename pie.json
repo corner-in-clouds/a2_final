@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background":"ivory",
+    "data": {
+      "values": [
+        {"category": "Day", "value": 6419},
+        {"category": "Other", "value": 13581}
+      ]
+    },
+    "mark": {"type": "arc", "innerRadius": 50},
+    "encoding": {
+      "theta": {"field": "value", "type": "quantitative"},
+      "color": {"field": "category", 
+      "type": "nominal", 
+      "legend": null,
+      "scale": {
+                  "domain": [
+                    "Day",
+                    "Other"
+                  ],
+                  "range": [
+                    "#cbb3aa",
+                    "#c685a5"
+                  ]
+                }}
+    },
+    "layer": [{
+      "mark": {"type": "arc", "outerRadius": 80}
+    }, {
+      "mark": {"type": "text", "radius": 100},
+      "encoding": {
+        "text": {"field": "category", "type": "nominal"}
+      }
+    }],
+    "config": {
+  "view": {
+     "stroke": "transparent"
+  }
+}
+  }
+  

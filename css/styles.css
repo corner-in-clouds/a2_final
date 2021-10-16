@@ -1,0 +1,27 @@
+* {
+	font-family: 'Lato';
+	color: black;
+  font-size: 17px;
+  }
+
+  h1 {
+    font-size: 45px;
+    font-family: 'Alice';
+  }
+  h2 {
+    font-size: 30px;
+    font-family: 'Alice';
+  } 
+  .page{
+    width: fit-content;    
+    background-color: ivory;   
+    margin: auto;
+    padding: 50px;
+    padding-top: 35px;
+ }
+  .vis-container{
+    width: 100%;
+  }
+  .pure-g{
+    margin-bottom: 25px;
+  }
